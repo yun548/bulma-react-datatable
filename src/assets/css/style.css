@@ -12,11 +12,10 @@ th.sortable {
     display: inline-block;
 }
 .asrt-page-length .input-group-addon{
-    display: inline-block;
+    display: inline-flex;
     width: auto;
     margin: 0;
-    padding: 0;
-    background: #fff;
+    padding: 8px 0 0 0;
     border: none;
 }
 .asrt-pagination {
@@ -27,4 +26,7 @@ th.sortable {
 }
 .asrt-loading-textwrap{
     padding: 5px 0px;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }

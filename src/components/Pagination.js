@@ -5,14 +5,14 @@ export default function InitialPagination(props) {
       <Fragment>
         {(props.config.show_first) ? (
           <li className={(props.isFirst ? "disabled " : "") + "page-item"}>
-            <a href='#' className="page-link" tabIndex="-1"
+            <a href='#' className="button is-small is-light page-link" tabIndex="-1"
               onClick={props.firstPage}>
               {props.config.language.pagination.first}
             </a>
           </li>
         ) : null}
         <li className={(props.isFirst ? "disabled " : "") + "page-item"}>
-          <a href='#' className="page-link" tabIndex="-1"
+          <a href='#' className="button is-small is-light page-link" tabIndex="-1"
             onClick={props.previousPage}>
             {props.config.language.pagination.previous}
           </a>
@@ -34,14 +34,14 @@ export default function InitialPagination(props) {
           </a>
         </li>
         <li className={(props.isLast ? "disabled " : "") + "page-item"}>
-          <a href='#' className="page-link"
+          <a href='#' className="button is-small is-light page-link"
             onClick={props.nextPage}>
             {props.config.language.pagination.next}
           </a>
         </li>
         {(props.config.show_last) ? (
           <li className={(props.isLast ? "disabled " : "") + "page-item"}>
-            <a href='#' className="page-link" tabIndex="-1"
+            <a href='#' className="button is-small is-light page-link" tabIndex="-1"
               onClick={props.lastPage}>
               {props.config.language.pagination.last}
             </a>

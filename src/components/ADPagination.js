@@ -10,7 +10,7 @@ export default function ADPagination(props){
   let Item = function(props) {
     let className = (props.className) || "";
     return(<li className={"page-item " + className}>
-      <a href='#' className="page-link" tabIndex="-1"
+      <a href='#' className="button is-small is-light page-link" tabIndex="-1"
         onClick={(e) => { e.preventDefault(); props.onClick(e) }}>
         {props.children}
       </a>
@@ -19,9 +19,9 @@ export default function ADPagination(props){
 
   let Add = function(s, f){
     for (let i = s; i < f; i++) {
-      tags.push(<Item 
+      tags.push(<Item
         key={i}
-        className={(page == i) ? "active" : ""}
+        className={(page == i) ? "is-active" : ""}
         onClick={(e) => props.goToPage(e, i)}>{i}</Item>);
     }
   }
@@ -29,20 +29,20 @@ export default function ADPagination(props){
   let Last = function() {
     tags.push(<Item key="l...">...</Item>);
     tags.push(<Item key={size}
-      className={(page == size) ? "active" : ""}
+      className={(page == size) ? "is-active" : ""}
       onClick={(e) => props.goToPage(e, size)}>{size}</Item>);
   }
 
   let First = function() {
-    tags.push(<Item 
+    tags.push(<Item
       key="1"
-      className={(page == 1) ? "active" : ""}
+      className={(page == 1) ? "is-active" : ""}
       onClick={(e) => props.goToPage(e, 1)}>1</Item>);
     tags.push(<Item key="f...">...</Item>);
   }
-  
+
   tags.push(
-    <Item 
+    <Item
       key="p0"
       className={(props.isFirst ? "disabled " : "")}
       onClick={props.previousPage}>
@@ -66,12 +66,12 @@ export default function ADPagination(props){
     Last();
   }
 
-  tags.push(<Item 
+  tags.push(<Item
     key="n0"
     className={props.isLast ? "disabled " : ""}
     onClick={props.nextPage}>
     {pagination.next
-      ? pagination.next 
+      ? pagination.next
       : <span>&#9658;</span>}
   </Item>);
 

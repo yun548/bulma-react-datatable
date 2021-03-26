@@ -6,22 +6,20 @@ export default {
       marginTop: '16px'
     },
     table_size: {
-      background: 'none',
       border: 'none',
       padding: 0
     },
     table_size_dropdown: {
-      width: '70px',
+      width: '100px',
       flex: 'none',
-      margin: '0px 10px',
+      margin: '0px 10px 0px 0px',
       display: 'inline-block',
-      float: 'none'
     },
     table_filter: {
       display: 'inline-block',
       verticalAlign: 'top',
       marginRight: '5px',
-      width: '250px'
+      width: '350px'
     },
     table_tool: {
       display: 'inline-block',

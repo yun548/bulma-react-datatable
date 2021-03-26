@@ -1,22 +1,22 @@
 {
-  "name": "@ashvin27/react-datatable",
-  "version": "1.5.3",
-  "description": "ReactDatatable is a component which provide ability to create multifunctional table using single component like jQuery Datatable",
+  "name": "@yun548/bulma-react-datatable",
+  "version": "1.5.12",
+  "description": "ReactDatatable is a component which provide ability to create multifunctional table using single component like jQuery Datatable using Bulma classes",
   "main": "./lib/index.js",
   "author": {
-    "name": "Ashvin Patel",
-    "email": "patelash212@gmail.com",
-    "url": "https://github.com/ashvin27"
+    "name": "Jordi Fernandez",
+    "email": "jfernandezcarrere@gmail.com",
+    "url": "https://github.com/yun548"
   },
   "license": "MIT",
   "homepage": "http://react-datatable.in",
   "bugs": {
-    "url": "https://github.com/ashvin27/react-datatable/issues",
-    "email": "patelash212@gmail.com"
+    "url": "https://github.com/yun548/bulma-react-datatable/issues",
+    "email": "jfernandezcarrere@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashvin27/react-datatable.git"
+    "url": "git+https://github.com/yun548/bulma-react-datatable.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -48,10 +48,10 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
+    "snyk": "^1.349.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^3.10.0",
-    "snyk": "^1.349.0"
+    "webpack": "^3.10.0"
   },
   "keywords": [
     "react-datatable",

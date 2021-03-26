@@ -243,7 +243,7 @@ class ReactDatatable extends Component {
     let downloadLink, dataType = 'application/vnd.ms-excel';
 
     let tableHtml = this.getExportHtml();
-    
+
     // Specify file name
     let filename = this.config.filename ? this.config.filename + '.xls':'table.xls';
     // Create download link element
@@ -391,7 +391,7 @@ class ReactDatatable extends Component {
       return _.orderBy(this.props.records, o => {
         let colVal = o[this.state.sort.column];
         let typeofColVal = typeof colVal;
-        
+
         if (typeofColVal == "string") {
           if (isNaN(colVal)) {
             return new String(colVal.toLowerCase());
@@ -454,7 +454,7 @@ class ReactDatatable extends Component {
           exportToPDF={this.exportToPDF.bind(this)}
           extraButtons={this.props.extraButtons}/>
         <div className="row table-body asrt-table-body" style={style.table_body} id={(this.props.id) ? this.props.id + "-table-body" : ""}>
-          <div className="col-md-12">
+          <div className="column">
             <table className={this.props.className} id={this.props.id}>
               <thead className={this.props.tHeadClassName ? this.props.tHeadClassName : ''}>
                 <tr>
@@ -498,7 +498,7 @@ class ReactDatatable extends Component {
                     </td>
                   </tr>
                 ) : (
-                  (filterRecords.length) ? 
+                  (filterRecords.length) ?
                     filterRecords.map((record, rowIndex) => {
                       rowIndex = _.indexOf(this.props.records, record);
                       return (
@@ -518,7 +518,7 @@ class ReactDatatable extends Component {
                           }
                         </tr>
                       )
-                    }) : 
+                    }) :
                     (
                       <tr>
                         <td colSpan={this.props.columns.length} align="center">
