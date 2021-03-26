@@ -1,7 +1,7 @@
 {
   "name": "@yun548/bulma-react-datatable",
-  "version": "1.5.12",
-  "description": "ReactDatatable is a component which provide ability to create multifunctional table using single component like jQuery Datatable using Bulma classes",
+  "version": "1.0.0",
+  "description": "ReactDatatable is a component which provide ability to create multifunctional table using single component like jQuery Datatable using Bulma css classes",
   "main": "./lib/index.js",
   "author": {
     "name": "Jordi Fernandez",

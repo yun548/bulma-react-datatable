@@ -1,9 +1,9 @@
-# react-datatable
+# bulma-react-datatable
 
-[![npm version](https://img.shields.io/npm/v/@ashvin27/react-datatable.svg)](https://www.npmjs.com/package/@ashvin27/react-datatable)
-[![Known Vulnerabilities](https://snyk.io/test/github/ashvin27/react-datatable/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ashvin27/react-datatable?targetFile=package.json)
+[![npm version](https://img.shields.io/npm/v/@yun548/bulma-react-datatable.svg)](https://www.npmjs.com/package/@yun548/bulma-react-datatable)
+[![Known Vulnerabilities](https://snyk.io/test/github/yun548/bulma-react-datatable/badge.svg?targetFile=package.json)](https://snyk.io/test/github/yun548/bulma-react-datatable?targetFile=package.json)
 
-ReactDatatable is a component which provide ability to create multifunctional table using single component like jQuery Datatable. It's fully customizable and easy to integrate in any react component. Bootstrap compatible.
+ReactDatatable is a component which provide ability to create multifunctional tables using single component like jQuery Datatable. It's fully customizable and easy to integrate in any react component. It uses Bulma.io CSS.
 
 ## Features
 * Lightweight
@@ -20,7 +20,7 @@ ReactDatatable is a component which provide ability to create multifunctional ta
 ## Installation
 With [npm](https://npmjs.org/) installed, run
 ```
-npm i @ashvin27/react-datatable
+npm i @yun548/bulma-react-datatable
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm i @ashvin27/react-datatable
 ```js
 import React, { Component, Fragment } from 'react';
 import { render} from 'react-dom';
-import ReactDatatable from '@ashvin27/react-datatable';
+import ReactDatatable from '@yun548/bulma-react-datatable';
 
 class App extends Component {
     constructor(props) {
@@ -199,9 +199,9 @@ render(<App />, document.getElementById("app"));
 # API
 
 ```js
-import ReactDatatable from '@ashvin27/react-datatable';
+import ReactDatatable from '@yun548/bulma-react-datatable';
 or
-var ReactDatatable = require('@ashvin27/react-datatable')
+var ReactDatatable = require('@yun548/bulma-react-datatable')
 ```
 ## Props
 | Name  | Type | Description
