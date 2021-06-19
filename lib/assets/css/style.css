@@ -1,3 +1,4 @@
+@import url(../../../../../bulma-switch/dist/css/bulma-switch.min.css);
 th.sortable {
     color: #2196F3;
     cursor: pointer;
@@ -29,4 +30,37 @@ th.sortable {
 }
 .mb-0 {
   margin-bottom: 0px;
+}
+.align-center {
+    text-align: center !important;
+}
+.notification.justify-content-end {
+    justify-content: flex-end !important;
+    padding-bottom: 2.5rem;
+}
+.height-8 {
+    height: 64px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.b-r-message{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 15rem;
+    min-height: 8rem;
+}
+.b-r-message.b0{
+    bottom:0
+}
+.b-r-message.b1{
+    bottom:9rem
+}
+.b-r-message.b2{
+    bottom:18rem
+}
+.b-r-message.b3{
+    bottom:27rem
 }
