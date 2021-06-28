@@ -44,22 +44,3 @@ th.sortable {
     display: flex;
     justify-content: space-between;
 }
-.b-r-message{
-    position: fixed;
-    right: 0;
-    z-index: 1;
-    width: 15rem;
-    min-height: 8rem;
-}
-.b-r-message.b0{
-    bottom:0
-}
-.b-r-message.b1{
-    bottom:9rem
-}
-.b-r-message.b2{
-    bottom:18rem
-}
-.b-r-message.b3{
-    bottom:27rem
-}
