@@ -19,18 +19,12 @@ function SwitchFilter({props, filter}) {
         {className: "column is-one-fifth", key: filter.key + "-div"},
         _react2.default.createElement(
             'div',
-            { className: 'input-group-addon input-group-prepend  mb-2', key: filter.key + "-label" },
+            { className: 'field'},
             _react2.default.createElement(
-                'span',
-                { className: 'input-group-text', style: _style2.default.table_size },
+                'label',
+                { className: 'label', key: filter.key + "-label" },
                 filter.label ? filter.label : ''
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            {
-                className:"field has-addons"
-            },
+            ),
             _react2.default.createElement(
                 "p",
                 {
@@ -57,7 +51,7 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button is-rounded",
+                        className:"button",
                         name: filter.key,
                         id: filter.key + "-false",
                         value: false,
