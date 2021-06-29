@@ -23,7 +23,7 @@ function TableFilters ({props}) {
     return _react2.default.createElement(
         'div',
         {
-            className: 'notification columns is-multiline'
+            className: 'notification columns is-multiline pt-0'
         },
         props.filters.map(function (filter) {
             return (filter.type === "dropdown" ? _react2.default.createElement(
