@@ -18,13 +18,13 @@ function SwitchFilter({props, filter}) {
         'div',
         {className: "column is-one-fifth", key: filter.key + "-div"},
         _react2.default.createElement(
+            'label',
+            { className: 'label', key: filter.key + "-label" },
+            filter.label ? filter.label : ''
+        ),
+        _react2.default.createElement(
             'div',
-            { className: 'field'},
-            _react2.default.createElement(
-                'label',
-                { className: 'label', key: filter.key + "-label" },
-                filter.label ? filter.label : ''
-            ),
+            { className: 'field has-addons'},
             _react2.default.createElement(
                 "p",
                 {
