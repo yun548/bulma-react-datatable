@@ -30,3 +30,17 @@ th.sortable {
 .mb-0 {
   margin-bottom: 0px;
 }
+.align-center {
+    text-align: center !important;
+}
+.notification.justify-content-end {
+    justify-content: flex-end !important;
+    padding-bottom: 2.5rem;
+}
+.height-8 {
+    height: 64px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
