@@ -16,40 +16,38 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function DropdownFilter({props, filter}) {
     return _react2.default.createElement(
         'div',
-        {className: "align-center mr-5", key: filter.key + "-div"},
+        {className: "column is-one-fifth", key: filter.key + "-div"},
         _react2.default.createElement(
             'div',
-            { className: 'input-group-addon input-group-prepend', key: filter.key + "-label" },
+            { className: 'field'},
             _react2.default.createElement(
-                'span',
-                { className: 'input-group-text', style: _style2.default.table_size },
+                'label',
+                { className: 'label', key: filter.key + "-label" },
                 filter.label ? filter.label : ''
-            )
-        ),
-        _react2.default.createElement(
-            "select",
-            {
-                type:'text', 
-                className: 'input', 
-                multiple: filter.multiple, 
-                size:1, 
-                style: _style2.default.table_size_dropdown, 
-                key:filter.key,
-                name: filter.key,
-                onChange: props.addFilterDropdown
-            },
-            _react2.default.createElement(
-                'option',
-                { value: null },
-                'All'
             ),
-            Object.entries(filter.choices).map(function (choice) {
-                return _react2.default.createElement(
+            _react2.default.createElement(
+                "select",
+                {
+                    type:'text',
+                    className: 'input',
+                    multiple: filter.multiple,
+                    key:filter.key,
+                    name: filter.key,
+                    onChange: props.addFilterDropdown
+                },
+                _react2.default.createElement(
                     'option',
-                    {key:choice[1], value:choice[1]},
-                    choice[0]
-                );
-            })
+                    { value: null },
+                    'All'
+                ),
+                Object.entries(filter.choices).map(function (choice) {
+                    return _react2.default.createElement(
+                        'option',
+                        {key:choice[1], value:choice[1]},
+                        choice[0]
+                    );
+                })
+            )
         )
     )
 }

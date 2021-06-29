@@ -16,7 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function SwitchFilter({props, filter}) {
     return _react2.default.createElement(
         'div',
-        {className: "align-center mr-5 height-8", key: filter.key + "-div"},
+        {className: "column is-one-fifth", key: filter.key + "-div"},
         _react2.default.createElement(
             'div',
             { className: 'input-group-addon input-group-prepend  mb-2', key: filter.key + "-label" },
@@ -39,8 +39,8 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button is-rounded",
-                        name: filter.key, 
+                        className:"button",
+                        name: filter.key,
                         id: filter.key + "-true",
                         value: true,
                         key: filter.key,
@@ -58,7 +58,7 @@ function SwitchFilter({props, filter}) {
                     "button",
                     {
                         className:"button is-rounded",
-                        name: filter.key, 
+                        name: filter.key,
                         id: filter.key + "-false",
                         value: false,
                         key: filter.key,
