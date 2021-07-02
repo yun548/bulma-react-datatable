@@ -819,7 +819,9 @@ var ReactDatatable = function (_Component) {
         value = false;
         Object.defineProperty(filter, name, { value, enumerable:true});
       } else {
-        delete this.state.fetchFilters[Object.keys(this.state.filter)[0]];
+        Object.defineProperty(filter, name, { value, enumerable:true});
+        delete this.state.fetchFilters[Object.keys(filter)[0]];
+        filter=null;
       }
       
       this.setState({
