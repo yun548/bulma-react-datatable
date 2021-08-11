@@ -66,7 +66,7 @@ var ReactDatatable = function (_Component) {
     _this.filterRecords = _this.filterRecords.bind(_this);
     _this.filterData = _this.filterData.bind(_this);
     _this.sortRecords = _this.sortRecords.bind(_this);
-    _this.addFilterDropdown = _this.addFilterDropdown.bind(_this);
+    _this.addFilter = _this.addFilter.bind(_this);
     _this.addFilterSwitch = _this.addFilterSwitch.bind(_this);
     _this.config = {
       button: {
@@ -647,7 +647,7 @@ var ReactDatatable = function (_Component) {
           exportToCSV: this.exportToCSV.bind(this),
           exportToPDF: this.exportToPDF.bind(this),
           extraButtons: this.props.extraButtons, 
-          addFilterDropdown: this.addFilterDropdown.bind(this),
+          addFilter: this.addFilter.bind(this),
           addFilterSwitch: this.addFilterSwitch.bind(this)
         }),
         _react2.default.createElement(
@@ -772,8 +772,8 @@ var ReactDatatable = function (_Component) {
       );
     }
   }, {
-    key: 'addFilterDropdown',
-    value: function addFilterDropdown(e) {
+    key: 'addFilter',
+    value: function addFilter(e) {
       var _this9 = this;
       var value = e.target.value;
       var key = e.target.name;

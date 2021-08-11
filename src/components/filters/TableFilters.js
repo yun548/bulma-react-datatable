@@ -17,6 +17,9 @@ var _dropdownFilter2 = _interopRequireDefault(_dropdownFilter);
 var _switchFilter = require("./SwitchFilter");
 var _switchFilter2 = _interopRequireDefault(_switchFilter);
 
+var _numberFilter = require("./NumberFilter");
+var _numberFilter2 = _interopRequireDefault(_numberFilter);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function TableFilters ({props}) {
@@ -26,22 +29,40 @@ function TableFilters ({props}) {
             className: 'notification columns is-multiline pt-0'
         },
         props.filters.map(function (filter) {
-            return (filter.type === "dropdown" ? _react2.default.createElement(
-                _dropdownFilter2.default,
-                {
-                    props:props,
-                    filter:filter,
-                    key: filter.key
-                },
-            ) : filter.type === "switch" ? _react2.default.createElement(
-                _switchFilter2.default,
-                {
-                    props:props,
-                    filter:filter,
-                    key: filter.key
-                },
-            ) : null)
+            if (filter.type === 'dropdown') {
+                return _react2.default.createElement(
+                    _dropdownFilter2.default,
+                    {
+                        props:props,
+                        filter:filter,
+                        key: filter.key
+                    },
+                )
+            }
 
+            if (filter.type === 'switch') {
+                return _react2.default.createElement(
+                    _switchFilter2.default,
+                    {
+                        props:props,
+                        filter:filter,
+                        key: filter.key
+                    },
+                )
+            }
+            
+            if (filter.type === 'number') {
+                return _react2.default.createElement(
+                    _numberFilter2.default,
+                    {
+                        props:props,
+                        filter:filter,
+                        key: filter.key
+                    },
+                )
+            }
+
+            return null;
         })
 
     );
