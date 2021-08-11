@@ -32,7 +32,8 @@ function NumberFilter({props, filter}) {
                     className: 'input',
                     key:filter.key,
                     name: filter.key,
-                    onChange: props.addFilter
+                    onChange: props.addFilter,
+                    'min':'0'
                 }
             )
         )
