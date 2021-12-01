@@ -33,14 +33,14 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button",
+                        className:"button is-capitalized",
                         name: filter.key,
                         id: filter.key + "-true",
                         value: true,
                         key: filter.key,
                         onClick: props.addFilterSwitch
                     },
-                    "oui"
+                    "Oui"
                 )
             ),
             _react2.default.createElement(
@@ -51,14 +51,14 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button",
+                        className:"button is-capitalized",
                         name: filter.key,
                         id: filter.key + "-false",
                         value: false,
                         key: filter.key,
                         onClick: props.addFilterSwitch
                     },
-                    "non"
+                    "Non"
                 )
             )
         )
