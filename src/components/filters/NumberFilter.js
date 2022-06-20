@@ -16,20 +16,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function NumberFilter({props, filter}) {
     return _react2.default.createElement(
         'div',
-        {className: "column is-one-fifth", key: filter.key + "-div"},
+        {className: "column is-narrow", key: filter.key + "-div"},
         _react2.default.createElement(
             'div',
             { className: 'field'},
             _react2.default.createElement(
                 'label',
-                { className: 'label', key: filter.key + "-label" },
+                { className: 'label is-size-7', key: filter.key + "-label" },
                 filter.label ? filter.label : ''
             ),
             _react2.default.createElement(
                 "input",
                 {
                     type:'number',
-                    className: 'input',
+                    className: 'input is-small',
                     key:filter.key,
                     name: filter.key,
                     onChange: props.addFilter,

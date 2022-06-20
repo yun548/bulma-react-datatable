@@ -16,10 +16,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function SwitchFilter({props, filter}) {
     return _react2.default.createElement(
         'div',
-        {className: "column is-one-fifth", key: filter.key + "-div"},
+        {className: "column is-narrow", key: filter.key + "-div"},
         _react2.default.createElement(
             'label',
-            { className: 'label', key: filter.key + "-label" },
+            { className: 'label is-size-7', key: filter.key + "-label" },
             filter.label ? filter.label : ''
         ),
         _react2.default.createElement(
@@ -33,7 +33,7 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button is-capitalized",
+                        className:"button is-capitalized is-small",
                         name: filter.key,
                         id: filter.key + "-true",
                         value: true,
@@ -51,7 +51,7 @@ function SwitchFilter({props, filter}) {
                 _react2.default.createElement(
                     "button",
                     {
-                        className:"button is-capitalized",
+                        className:"button is-capitalized is-small",
                         name: filter.key,
                         id: filter.key + "-false",
                         value: false,
